@@ -1,0 +1,40 @@
+<!--
+<app-welcome></app-welcome>
+-->
+ <app-ng-bootstrap-corousel></app-ng-bootstrap-corousel>
+
+<mat-card [ngClass]="{'fullscreen': true}" style="text-align: -webkit-center; position: inherit;">
+    <mat-grid-list cols="2">
+        <mat-grid-tile>
+            <app-map></app-map>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div class="details">
+                <p-fieldset legend="MY SMART SCHOOL">
+                    <p>
+                        <mat-icon>home</mat-icon>
+                        My Smart School<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Campus 2<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berhampur -760002, Orissa, India
+                    </p><br>
+                    <p>
+                        <mat-icon> call</mat-icon>
+                        7978120295
+                    </p><br>
+                    <p>
+                        <mat-icon> email</mat-icon>
+                        mySmartSchool@edu.in
+                    </p><br>
+                    <p>
+                        <mat-icon>calendar_today</mat-icon>
+                        Monday - Friday: 8:00 AM - 10:00 PM
+                    </p>
+                </p-fieldset>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</mat-card>
+<app-counter></app-counter>
+<app-alumni-thoughts></app-alumni-thoughts>
+
+<app-footer></app-footer>

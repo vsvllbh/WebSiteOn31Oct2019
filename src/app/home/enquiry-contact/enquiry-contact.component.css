@@ -1,0 +1,66 @@
+.color{
+  color: #051937;
+}
+.btn{
+  margin-left:15%;
+  color: #051937;
+  }
+.btn:hover{
+  color: white;
+}
+.btn2{
+  margin-left:10%;
+}
+.mat-raised-button{
+
+  margin-left:5%;
+  border: 1px solid #273c48;
+  background-color: transparent;
+  -webkit-transition: background-color 108ms ease;
+  transition: background-color 108ms ease;
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  color: #273c48;
+
+  text-transform: uppercase;
+}
+.mat-raised-button:hover{
+  background-color: #162537;
+  color: white;
+}
+.mat-card-title{
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0;
+}
+.mat-card{
+  position: fixed;
+  position: -ms-device-fixed; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+  width: 100%;
+
+  color:white;
+
+  height: 200px;
+  background-image: linear-gradient(to top, rgba(5,25,55,1), rgba(0,0,0,0)); /* Standard syntax (must be last) */
+}
+.mat-card-header{
+    margin-left: 70%;
+}
+.h4{
+  background-color: #051937;
+}
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #051937 !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #051937 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: #051937 !important;;
+}

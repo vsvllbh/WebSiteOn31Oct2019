@@ -1,0 +1,34 @@
+h3 {
+  font-size: medium;
+  min-width: 100%;
+  background-color: #05386B;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  top: 0;
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+
+}
+.mat-button{
+  margin-left: 70px;
+}
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar{
+  position: fixed;
+  position: -ms-device-fixed; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+  background-color: white;
+
+}
+
+.mat-sidenav-container{
+  background-color: white;
+}

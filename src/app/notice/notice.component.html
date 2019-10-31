@@ -1,0 +1,21 @@
+<mat-card [ngClass]="{'fullscreen': true}" style=" position: inherit;margin-bottom: 5%">
+<mat-card-title>Notice Board</mat-card-title>
+
+<div *ngFor="let n of noticee | async">
+
+  <mat-card color="primary">
+    <mat-card-header><h5>{{n.title}}</h5></mat-card-header><br>
+    <mat-card-content>{{n.description}}</mat-card-content>
+    By {{n.designation}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <mat-icon style="margin-top: 30px">date_range
+    </mat-icon>&nbsp;&nbsp; {{ n.date.toDate().toString().split(2,2)}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button mat-raised-button ><a style="text-decoration:none;color: #f39c12;" href="{{n.document}}" target="_blank">Download</a></button>
+
+
+  </mat-card>
+
+  <mat-divider></mat-divider><br>
+
+</div>
+
+</mat-card>

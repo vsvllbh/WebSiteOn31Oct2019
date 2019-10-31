@@ -1,0 +1,51 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-top: 200px;
+}
+
+.col-md-4 {
+  text-align: center;
+  padding-bottom: 50px;
+  border-right: 1px dashed black;
+}
+
+.col-md-4:last-child {
+  border-right: 0px solid black;
+}
+
+.counter {
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+}
+
+i {
+  font-size: 20px !Important;
+}
+
+@media (max-width: 991px) {
+  .col-md-4 {
+    border-right: 0px dashed black;
+    border-bottom: 1px dashed black;
+    width: 50%;
+    margin: auto auto;
+  }
+
+  .col-md-4:last-child {
+    border-bottom: 0px dashed black;
+  }
+}
+.mat-card {
+  transition: all 1s linear;
+  width: calc(100% );
+  background-color: #05386B;
+}
+.mat-display-2{
+  color: #ff6361;
+}
+.mat-display-2:hover{
+  color: #ffd739;
+}

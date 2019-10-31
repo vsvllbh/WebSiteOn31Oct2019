@@ -1,0 +1,46 @@
+<mat-card [ngClass]="{'fullscreen': true}" style="padding-top: 10%" >
+<ngb-carousel  #carousel interval="2000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)" fxFlexAlign="stretch" direction="right">
+  <ng-template  ngbSlide *ngFor="let img of mimages; index as i">
+    <div class="carousel-caption">
+      <h3>My slide {{i + 1}} title</h3>
+    </div>
+   <!-- <a   href="https://www.google.fr/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">-->
+      <div class="picsum-img-wrapper">
+        <img class='img-fluid'  [src]='img.url' alt="My image {{i + 1}} description" class="mh-100" style="width: 100%; height: 70vh" >
+      </div>
+    <!--</a>-->
+  </ng-template>
+</ngb-carousel>
+</mat-card>
+<!--
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <img  [src]="images[0]" alt="Random first slide">
+    <div class="carousel-caption">
+      <h3>10 seconds between slides...</h3>
+      <p>This carousel uses customized default values.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img class='img-fluid' [src]="images[1]" alt="Random second slide">
+    <div class="carousel-caption">
+      <h3>No mouse events...</h3>
+      <p>This carousel doesn't pause or resume on mouse events</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img class='img-fluid' [src]="images[2]"  alt="Random third slide">
+    <div class="carousel-caption">
+      <h3>No keyboard...</h3>
+      <p>This carousel uses customized default values.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img class='img-fluid' [src]="images[3]" alt="Random fourth slide">
+    <div class="carousel-caption">
+      <h3>And no wrap after last slide.</h3>
+      <p>This carousel uses customized default values.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+-->

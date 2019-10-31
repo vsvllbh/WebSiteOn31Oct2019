@@ -1,0 +1,26 @@
+<mat-card [ngClass]="{'fullscreen': true}" style="text-align: -webkit-center; position: inherit;margin-bottom: 8%">
+<div class="row">
+    <div class="col-md-4">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">perm_identity</mat-icon>
+      <h1><span class="counter"><ng2-odometer [config]="{ auto: false }" [number]="teacher"
+                                              [observable]="observable" [theme]="'train-station'"></ng2-odometer>
+</span></h1>
+      <h2 class="mat-display-2">TEACHERS</h2>
+      <i class="fa fa-users"></i>
+    </div>
+    <div class="col-md-4">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+      <h1><span class="counter"><ng2-odometer [config]="{ auto: false }" [number]="student"
+                                              [observable]="observable" [theme]="'train-station'"></ng2-odometer></span></h1>
+      <h2 class="mat-display-2">STUDENTS</h2>
+      <i class="fa fa-desktop"></i>
+    </div>
+    <div class="col-md-4">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+      <h1><span class="counter"><ng2-odometer [config]="{ auto: false }" [number]="staff"
+                                              [observable]="observable" [theme]="'train-station'"></ng2-odometer></span></h1>
+      <h2 class="mat-display-2">STAFF</h2>
+      <i class="fa fa-coffee"></i>
+    </div>
+  </div>
+</mat-card>

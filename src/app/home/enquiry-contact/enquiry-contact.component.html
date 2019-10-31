@@ -1,0 +1,19 @@
+<div id="close" >
+<mat-card style="margin-top:43%; width:100%; " >
+  <span style="color:#051937; font-weight: bolder; ">Enquire Now for Admission 2019</span>
+  <mat-form-field style="padding-left:10%;">
+    <mat-label class="color">Name</mat-label>
+    <input [(ngModel)]="name" matInput maxlength="15" name="name" type="text">
+  </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <mat-form-field>
+    <span matPrefix>+91 &nbsp;</span>
+    <mat-label class="color">Phone Number</mat-label>
+    <input [(ngModel)]="number" matInput maxlength="10" name="number" type="tel">
+    <mat-icon matSuffix>mode_edit</mat-icon>
+  </mat-form-field>
+  <button (click)="Submit()"  mat-raised-button value="submit">Submit</button>
+  <button mat-button class="btn" onclick="document.getElementById('close').style.display='none'"> <i class="material-icons">
+    cancel
+  </i></button>
+</mat-card>
+</div>

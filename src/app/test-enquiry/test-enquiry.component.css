@@ -1,0 +1,30 @@
+.cards{
+  /*margin-top:30px;
+  margin-right:80px ;
+  margin-left:80px;
+  border:2px solid;*/
+  background-color:#051937;
+}
+.color1{
+  color:white;
+  font-family: cursive;
+}
+.color3{
+  color: white;
+  background-color:#34495e;
+  height:200px;
+}
+.size{
+  height:150px;
+  width: 150px;
+}
+.styles{
+  text-align: right;
+  margin-right:70px;
+  color: #ff6361;
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+ /* border-radius: 100%;*/
+}

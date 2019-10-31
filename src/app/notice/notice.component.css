@@ -1,0 +1,50 @@
+button:hover{
+
+}
+a:hover{
+  color:#2d3436;
+  transition:0.5s;
+}
+a{
+  color:#2d3436;
+  transition:0.5s;
+}
+.mat-card-title{
+  font-weight: bold;
+  font-size: 35px;
+  color: white;
+  font-family: whitman,serif;
+  text-align:center;
+
+  /*background-color: #051937;*/
+
+  /*
+  background-image: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(5,25,55,1) 33%, rgba(255,255,255,1) 100%);
+  */
+  background-image:linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(5,25,55,1) 33%, rgba(142,177,218,1) 100%);
+}
+.cta {
+  display: block;
+  width: 180px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: 2px solid #273c48;
+  background-color: transparent;
+  opacity: 1;
+  -webkit-transition: background-color 108ms ease;
+  transition: background-color 108ms ease;
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  color: #273c48;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cta:hover{
+  background-color: #162537;
+  color: white;
+
+}
